@@ -1,0 +1,2 @@
+# JS-codewars
+Daily Codewars
