@@ -9,6 +9,17 @@
 // Notes
 // The input array will always contain only positive numbers, and will never be empty or null.
 
+// function squareOrSquareRoot(array) {
+//     return array;  
+//   }
+
+// Attempt
+// function squareOrSquareRoot(array) {
+//   return array.map(x => Math.sqrt(x) == 'Integer' ? Math.sqrt(x) : x^2);  
+// }
+
+
+//Answer
 function squareOrSquareRoot(array) {
-    return array;  
-  }
+    return array.map(x => Number.isInteger(Math.sqrt(x)) ? Math.sqrt(x) : x*x); 
+}
